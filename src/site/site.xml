@@ -1,0 +1,20 @@
+<project>
+
+    <body>
+        <menu name="Относно">
+            <item name="Начало" href="index.html" />
+            <item name="Конфигурационни опции" href="options.html" />
+            <item name="Създаване на задание" href="assignments_guide.html" />
+            <item name="Конфигуриране на заданието" href="executor_params.html" />
+            <item name="Приложно-програмен интерфейс" href="api.html" />
+        </menu>
+        <menu ref="reports" />
+    </body>
+
+    <skin>
+        <groupId>org.apache.maven.skins</groupId>
+        <artifactId>maven-fluido-skin</artifactId>
+        <version>1.5</version>
+    </skin>
+
+</project>

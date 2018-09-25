@@ -1,0 +1,19 @@
+spring:
+    jackson:
+        serialization-inclusion: non_null
+
+assignments:
+    base-directory: assignments
+
+submissions:
+    base-directory: submissions
+    maxSubmissionSize: 102400
+
+    submissionExecutors:
+        manual:
+            className: phix.submission.executor.ManualReviewSubmissionExecutor
+        docker:
+            className: phix.submission.executor.docker.DockerSubmissionExecutor
+            config:
+                concurrentExecutions: 10
+                uri: http://localhost:2375/

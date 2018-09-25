@@ -1,0 +1,18 @@
+id: docker-assignment
+title: Docker Assignment
+type: docker
+description: Assignment description
+executorParams:
+    compilationImage: java-compile
+    solutionPath: /var/src/solution
+    solutionFileName: HelloWorld.java
+    compilationOutputPath: /var/src/solution/
+    compilationMaxLogSize: 10240
+    timeLimit: 150000
+    runImage: java-run
+    runCompilationArtifactPath: /var/src/
+    runMaxLogSize: 10240
+    verificationImage: java-verify
+    verificationOutputFileName: output
+    verificationOutputPath: /var/src/solution
+    verificationOutputHidden: true
